@@ -6,9 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Docker build
-        run: |
-          DOCKER_BUILDKIT=1 docker image build --no-cache . -f docker/test.Dockerfile -t testcontainer
       - name: Docker compose
         run: |
           docker-compose -f composes/docker-compose.yml up
