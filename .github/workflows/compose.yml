@@ -11,4 +11,4 @@ jobs:
           DOCKER_BUILDKIT=1 docker image build --no-cache . -f docker/test.Dockerfile -t testcontainer
       - name: Docker compose
         run: |
-          docker-compose -f composes/docker-compose.yml up -d
+          docker-compose -f composes/docker-compose.yml up
