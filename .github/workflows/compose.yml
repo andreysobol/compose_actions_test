@@ -1,7 +1,7 @@
 name: docker-compose-actions-workflow
 on: push
 jobs:
-  test:
+  test_docker_compose:
     timeout-minutes: 1
     runs-on: ubuntu-latest
     steps:
