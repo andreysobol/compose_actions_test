@@ -8,6 +8,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Sleep
         run: |
-          echo "Sleep 90s"
-          sleep 90
+          echo "Sleep 10s"
+          sleep 10
           echo "Done"
