@@ -1,4 +1,4 @@
-name: docker-compose-actions-workflow
+name: test_sleep
 on: push
 jobs:
   test:
