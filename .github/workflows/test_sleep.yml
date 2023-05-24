@@ -2,11 +2,12 @@ name: docker-compose-actions-workflow
 on: push
 jobs:
   test:
+    timeout-minutes: 1
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Sleep
         run: |
-          echo "Sleep 1s"
-          sleep 1
+          echo "Sleep 90s"
+          sleep 90
           echo "Done"
